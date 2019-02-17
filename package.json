@@ -1,0 +1,19 @@
+{
+    "name": "@dek/boostrap",
+    "version": "1.0.0",
+    "description": "DEK project base structure",
+    "main": "index.js",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/dekproject/boostrap.git"
+    },
+    "keywords": [
+        "Dek"
+    ],
+    "author": "Andre Ferreira <andre@vigiadepreco.com.br>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/dekproject/boostrap/issues"
+    },
+    "homepage": "https://github.com/dekproject/boostrap"
+}
