@@ -15,7 +15,7 @@ What does the bootstrap do?
 To install the bootstrap we recommend using the CLI
 
 ```bash
-$ npm i -g @dek/cli
+$ npm i -g @dekproject/cli
 $ dek init
 ```
 
