@@ -1,4 +1,4 @@
-# @dek/bootstrap
+# @dekproject/bootstrap
 
 DEK project base structure
 
