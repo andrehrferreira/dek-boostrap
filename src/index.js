@@ -2,7 +2,10 @@ import express from "express";
 import dotenv from "dotenv";
 
 import routes from "./routes.js";
-import proxy from "./proxy";
+
+try{
+    const proxy = require("./proxy");
+} catch(e){ }
 
 dotenv.config();
 let app = express();
