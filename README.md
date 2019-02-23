@@ -10,7 +10,7 @@ What does the bootstrap do?
 * Configures production environment using Docker and Docker-compose
 * Configuration control via dotenv (https://www.npmjs.com/package/dotenv)
 
-### Instalation
+## Instalation
 
 To install the bootstrap we recommend using the CLI
 
@@ -21,13 +21,19 @@ $ dek init
 
 After a brief fill of project information select the option "Do you want to use DEK skeleton?"
 
-### Devmode
+## Devmode
 
 ```bash
 $ npm run dev
 ```
 
-### Build
+If your error in the following error: Internal watch failed: ENOSPC
+
+```bash
+sudo sysctl fs.inotify.max_user_watches=582222 && sudo sysctl -p
+```
+
+## Build
 
 To build the ES6 files in the standard compatible with the NodeJS for production
 
@@ -35,7 +41,7 @@ To build the ES6 files in the standard compatible with the NodeJS for production
 $ npm run build
 ```
 
-### Production
+## Production
 
 To create a project production container, execute the following commands:
 
