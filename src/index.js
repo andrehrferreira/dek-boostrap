@@ -17,9 +17,9 @@ import routes from "@dekproject/routes";
     try{
         const proxy = require("./proxy");
 
-        if(typeof proxy == "function" && process.env.BACKEND_ALIAS){
+        if(typeof proxy.default == "function" && process.env.BACKEND_ALIAS){
             $.app.use(process.env.BACKEND_ALIAS, await routes(process.env.ROUTES_PATH || "src/routes"));
-            $.app.use(await proxy());
+            $.app.use(await proxy.default());
         }
         else{
             $.app.use(await routes(process.env.ROUTES_PATH || "src/routes"));
