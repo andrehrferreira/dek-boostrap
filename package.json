@@ -1,6 +1,6 @@
 {
     "name": "@dekproject/boostrap",
-    "version": "1.2.3",
+    "version": "1.2.4",
     "description": "DEK project base structure",
     "main": "index.js",
     "scripts": {
