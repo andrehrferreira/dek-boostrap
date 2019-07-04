@@ -4,9 +4,11 @@
     "description": "DEK project base structure",
     "main": "index.js",
     "scripts": {
+        "clean": "rm -rf build",
+        "dev": "cross-env NODE_ENV=development nodemon -w src --exec 'babel-node src --presets env'",
         "build": "babel src -s -D -d build --presets env",
-        "dev": "nodemon -w src --exec \"babel-node src --presets env\"",
-        "start": "node build"
+        "kill": "fuser -k -n tcp 5555",
+        "start": "cross-env NODE_ENV=production node build/cluster.js"
     },
     "repository": {
         "type": "git",
@@ -22,11 +24,12 @@
     },
     "homepage": "https://github.com/dekproject/boostrap",
     "dependencies": {
+        "@babel/polyfill": "^7.4.4",
         "@dekproject/routes": "latest",
         "@dekproject/scope": "latest",
+        "cross-env": "^5.2.0",
         "dotenv": "^6.2.0",
-        "express": "^4.16.4",
-        "express-http-proxy": "^1.5.1"
+        "express": "^4.16.4"
     },
     "devDependencies": {
         "babel-cli": "^6.26.0",
